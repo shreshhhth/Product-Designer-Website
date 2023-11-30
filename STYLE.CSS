@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#minicircle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+    /*to give some delay in the minicircle and cursor's movement*/
+    width: 10px;
+    height: 10px;
+    z-index: 999999;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bounding {
+    width: fit-content;
+    /*width should be as of the size of the content*/
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.bounding .boundingelem {
+    transform: translateY(100%);
+    /*this will move the PRODUCT heading to the Downward and we cannot see the heading in our website as we have to give the animation*/
+}
+
+
+#main {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+    position: relative;
+}
+
+#nav {
+    color: #fff;
+    /* for making contents to go to corners*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 50px;
+    /*for giving space between sides */
+
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    /* this will remove underline in a tag*/
+    font-size: 18px;
+}
+
+#heading {
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+#heading h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 9vw;
+    /*this will make the heading to look accodingly as the website width increases or decreases*/
+    opacity: 0.7;
+    line-height: 1;
+    font-weight: 900;
+}
+
+#heading #secondh1 {
+    margin-left: 200px;
+}
+
+#heading #headingh5 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 13px;
+    line-height: 1;
+}
+
+
+.blocktext {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+    /*in this the box will use the available space*/
+
+}
+
+
+.blocktext h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: right;
+
+}
+
+#chotiheadings {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-family: 'Philosopher', sans-serif;
+    margin-top: 100px;
+    /* text will align according to the display*/
+    padding-right: 50px;
+
+}
+
+#chotiheadings h5{
+    text-align: right;
+    font-size: 1.5vw;
+}
+
+#herofooter {
+    /*this will shift the footer to the bottom*/
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#herofooter a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+#herofooter .iconset {
+    display: flex;
+    padding-right: 30px;
+}
+
+#herofooter .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #c8c4c4;
+    color: black;
+
+}
+
+
+#secondpage {
+    color: #fff;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 200px;
+}
+
+.elem {
+    position: relative;
+    /* this will show contents in the desired background*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border-top: 1px solid #888;
+    padding: 2vw 1vw;
+    padding-right: 0;
+    opacity: 0.7;
+
+}
+
+.elem h1 {
+    text-transform: uppercase;
+    font-size: 5.6vw;
+
+}
+
+.elemlast {
+    border-bottom: 1px solid #888;
+}
+
+.elem img {
+    z-index: 999;
+    position: absolute;
+    height: 140%;
+    /* will show image into specific size*/
+    display: none;
+    /* image is still there but not showing if we're not hovering on the text*/
+    pointer-events: none;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    /*this will give a gap between picture and paragraph*/
+    color: #fff;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    /* this will make the whole about section to appear on the right side*/
+    background-color: black;
+    width: 100%;
+
+
+
+}
+
+#textabout {
+    width: 25rem;
+    padding-top: 100px;
+}
+
+#textabout h5 {
+
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+#textabout p {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 23px;
+}
+
+
+#about img {
+    width: 15vw;
+}
+
+#about a {
+    font-family: 'Asap', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 12px 22px;
+    font-size: 15px;
+}
+
+#follow {
+    color: #fff;
+    background-color: black;
+    padding: 20px 30px;
+    width: 100%;
+    padding-bottom: 8vw;
+}
+
+#follow h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+#follow h3 {
+    text-transform: uppercase;
+    font-size: 19px;
+    margin-top: 10px;
+
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
+
+#footerleft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#footerright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+
+}
+
+#footer a {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding-right: 30px;
+}
+
+
+
+
+
